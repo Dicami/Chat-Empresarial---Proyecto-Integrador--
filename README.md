@@ -4,49 +4,50 @@ Sistema de comunicación interna y chat empresarial cliente-servidor desarrollad
 
 ---
 
-##  Descripción del Sistema
+## Descripción del Sistema
 
-La solución responde a la problemática de la empresa tecnológica tras la apertura de su segunda sede operativa (Sede B)[cite: 1]. Anteriormente, la coordinación entre sedes se realizaba a través de canales informales y no autenticados, generando riesgos de fuga de información, falta de auditoría y problemas de trazabilidad[cite: 1].
+La solución responde a la problemática de la empresa tecnológica tras la apertura de su segunda sede operativa (Sede B). Anteriormente, la coordinación entre sedes se realizaba a través de canales informales y no autenticados, generando riesgos de fuga de información, falta de auditoría y problemas de trazabilidad.
 
-**Connecta** centraliza la comunicación a través de:
-* **Servidor de Chat (Go):** Gestiona la conexión de clientes  mediante WebSockets, procesa rutas REST para el historial y canales, e implementa persistencia de mensajes y registros de sesión[cite: 1].
-* **Servicio de Autenticación (FastAPI):** Gestiona la verificación de credenciales corporativas (contraseñas con hash `bcrypt`) y la emisión de tokens JWT[cite: 1].
-* **Cliente de Consola (Go):** Interfaz CLI liviana que permite a los colaboradores enviar/recibir mensajes directos, unirse a canales y consultar historiales[cite: 1].
+Connecta centraliza la comunicación a través de:
 
----
-
-##  Integrantes del Equipo
-
-* **Emilio Cuenca**
-* **Danna Simaluisa**
-* **Camila Villagran**
-
+- **Servidor de Chat (Go):** Gestiona la conexión de clientes mediante WebSockets, procesa rutas REST para el historial y canales, e implementa persistencia de mensajes y registros de sesión.
+- **Servicio de Autenticación (FastAPI):** Gestiona la verificación de credenciales corporativas (contraseñas con hash `bcrypt`) y la emisión de tokens JWT.
+- **Cliente de Consola (Go):** Interfaz CLI liviana que permite a los colaboradores enviar/recibir mensajes directos, unirse a canales y consultar historiales.
 
 ---
 
-##  Alcance Preliminar
+## Integrantes del Equipo
+
+- Emilio Cuenca
+- Danna Simaluisa
+- Camila Villagran
+
+---
+
+## Alcance Preliminar
 
 ### Incluido en el Proyecto
-* **Autenticación Segura:** Inicio de sesión con correo corporativo y contraseñas protegidas mediante hash `bcrypt`. Emisión de tokens JWT con roles (`Usuario` y `Administrador`)[cite: 1].
-* **Mensajería Básica:** Mensajes de texto directos (persona a persona) y mensajes en canales/grupos[cite: 1].
-* **Historial de Mensajes:** Consulta de los últimos 50 mensajes por conversación[cite: 1].
-* **Control de Sesiones:** Expiración automática de sesión a los 60 minutos, cierre manual y registro de timestamps de inicio/fin[cite: 1].
-* **Administración y Configuración:** Creación de perfiles, gestión de permisos, creación de canales públicos/privados y auditoría de conversaciones[cite: 1].
-* **Componente Estadístico:** Registro de eventos de uso (mensajes, sesiones, tiempos) y exportación de métricas a CSV[cite: 1].
-* **Despliegue Distribuido:** Servidor Go y FastAPI en la Sede A, conectando a clientes ubicados tanto en la Sede A como en la Sede B a través de la red corporativa[cite: 1].
+- **Autenticación Segura:** Inicio de sesión con correo corporativo y contraseñas protegidas mediante hash `bcrypt`. Emisión de tokens JWT con roles (Usuario y Administrador).
+- **Mensajería Básica:** Mensajes de texto directos (persona a persona) y mensajes en canales/grupos.
+- **Historial de Mensajes:** Consulta de los últimos 50 mensajes por conversación.
+- **Control de Sesiones:** Expiración automática de sesión a los 60 minutos, cierre manual y registro de *timestamps* de inicio/fin.
+- **Administración y Configuración:** Creación de perfiles, gestión de permisos, creación de canales públicos/privados y auditoría de conversaciones.
+- **Componente Estadístico:** Registro de eventos de uso (mensajes, sesiones, tiempos) y exportación de métricas a CSV.
+- **Despliegue Distribuido:** Servidor Go y FastAPI en la Sede A, conectando a clientes ubicados tanto en la Sede A como en la Sede B a través de la red corporativa.
 
 ### Fuera del Alcance
-* Envío de archivos multimedia (imágenes, audios, documentos)
-* Llamadas de voz o video
-* Interfaz gráfica de usuario (GUI) o aplicaciones móviles/web
-* Cifrado de extremo a extremo (E2EE)
-* Edición o eliminación de mensajes enviados
-* Balanceo de carga y alta disponibilidad en la nube
+- Envío de archivos multimedia (imágenes, audios, documentos)
+- Llamadas de voz o video
+- Interfaz gráfica de usuario (GUI) o aplicaciones móviles/web
+- Cifrado de extremo a extremo (E2EE)
+- Edición o eliminación de mensajes enviados
+- Balanceo de carga y alta disponibilidad en la nube
 
 ---
 
-##  Estructura del Repositorio
+## Estructura del Repositorio
 
+```text
 Chat-empresarial/
 ├── app-go/                  # Cliente y Servidor en Go
 ├── auth-service/            # Servicio de autenticación en FastAPI (Python)
