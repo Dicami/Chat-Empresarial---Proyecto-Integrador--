@@ -1,4 +1,4 @@
-# Connecta - Chat Empresarial Inter-Sedes
+# CorpLink - Sistema de Chat Empresarial Inter-Sedes
 
 Sistema de comunicación interna y chat empresarial cliente-servidor desarrollado en **Go** e integrado con un servicio de autenticación en **FastAPI (Python)**. Esta solución permite la interacción segura, autenticada y trazable mediante mensajería directa y canales entre los colaboradores de la Sede A y Sede B.
 
