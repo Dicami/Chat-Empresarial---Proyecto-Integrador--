@@ -36,12 +36,12 @@ La solución responde a la problemática de la empresa tecnológica tras la aper
 * **Despliegue Distribuido:** Servidor Go y FastAPI en la Sede A, conectando a clientes ubicados tanto en la Sede A como en la Sede B a través de la red corporativa[cite: 1].
 
 ### Fuera del Alcance
-* Envío de archivos multimedia (imágenes, audios, documentos)[cite: 1].
-* Llamadas de voz o video[cite: 1].
-* Interfaz gráfica de usuario (GUI) o aplicaciones móviles/web[cite: 1].
-* Cifrado de extremo a extremo (E2EE)[cite: 1].
-* Edición o eliminación de mensajes enviados[cite: 1].
-* Balanceo de carga y alta disponibilidad en la nube[cite: 1].
+* Envío de archivos multimedia (imágenes, audios, documentos)
+* Llamadas de voz o video
+* Interfaz gráfica de usuario (GUI) o aplicaciones móviles/web
+* Cifrado de extremo a extremo (E2EE)
+* Edición o eliminación de mensajes enviados
+* Balanceo de carga y alta disponibilidad en la nube
 
 ---
 
