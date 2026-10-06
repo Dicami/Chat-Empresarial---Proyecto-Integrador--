@@ -36,12 +36,12 @@ Connecta centraliza la comunicación a través de:
 - **Despliegue Distribuido:** Servidor Go y FastAPI en la Sede A, conectando a clientes ubicados tanto en la Sede A como en la Sede B a través de la red corporativa.
 
 ### Fuera del Alcance
-- Envío de archivos multimedia (imágenes, audios, documentos)
+- Envío de archivos, imágenes, audios o documentos (solo mensajes de texto)
 - Llamadas de voz o video
-- Interfaz gráfica de usuario (GUI) o aplicaciones móviles/web
-- Cifrado de extremo a extremo (E2EE)
+- Interfaz gráfica (GUI), aplicaciones móviles o web (el cliente es de consola)
+- Cifrado de extremo a extremo (E2EE); la protección se basa en contraseñas con hash y tokens JWT
 - Edición o eliminación de mensajes enviados
-- Balanceo de carga y alta disponibilidad en la nube
+- Alta disponibilidad, balanceo de carga y despliegue en la nube (excluidos por el documento del Proyecto Integrador, sección 2.4)
 
 ---
 
