@@ -15,20 +15,16 @@ La solución responde a la problemática de la empresa tecnológica tras la aper
 
 ---
 
-## 👥 Integrantes del Equipo
+##  Integrantes del Equipo
 
-* **Emilio Cuenca**[cite: 1]
-* **Danna Simaluisa**[cite: 1]
-* **Camila Villagran**[cite: 1]
+* **Emilio Cuenca**
+* **Danna Simaluisa**
+* **Camila Villagran**
 
-**Docente:** MgTI, MCs Iván Reyes Chacón[cite: 1]  
-**Materia:** Programación Orientada a Objetos[cite: 1]  
-**Institución:** Universidad Internacional del Ecuador (UIDE) - Powered by Arizona State University[cite: 1]  
-**Fecha:** Lunes, 5 de octubre de 2026[cite: 1]
 
 ---
 
-## 🎯 Alcance Preliminar
+##  Alcance Preliminar
 
 ### Incluido en el Proyecto
 * **Autenticación Segura:** Inicio de sesión con correo corporativo y contraseñas protegidas mediante hash `bcrypt`. Emisión de tokens JWT con roles (`Usuario` y `Administrador`)[cite: 1].
@@ -51,7 +47,7 @@ La solución responde a la problemática de la empresa tecnológica tras la aper
 
 ##  Estructura del Repositorio
 
-connecta-chat-empresarial/
+Chat-empresarial/
 ├── app-go/                  # Cliente y Servidor en Go
 ├── auth-service/            # Servicio de autenticación en FastAPI (Python)
 ├── network/                 # Configuración de red y reglas de comunicación inter-sedes
